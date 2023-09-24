@@ -20,8 +20,8 @@ const config: Config = {
         'dark-grayish-blue': '#6c7289',
       },
       fontFamily: {
-        montserrat: ['Montserrat'],
-        fraunces: ['Fraunces'],
+        montserrat: ['Montserrat', 'sans-serif'],
+        fraunces: ['Fraunces', 'serif'],
       }
     },
   },
