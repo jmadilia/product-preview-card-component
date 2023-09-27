@@ -18,11 +18,12 @@ const config: Config = {
         'cream': '#f2ebe3',
         'very-dark-blue': '#1c232b',
         'dark-grayish-blue': '#6c7289',
+        'very-dark-emerald': '#022c22',
       },
       fontFamily: {
-        montserrat: ['Montserrat', 'sans-serif'],
-        fraunces: ['Fraunces', 'serif'],
-      }
+        montserrat: ['var(--font-montserrat)'],
+        fraunces: ['var(--font-fraunces)'],
+      },
     },
   },
   plugins: [],
