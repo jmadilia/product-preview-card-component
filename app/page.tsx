@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <main className={`${fraunces.variable} font-fraunces flex flex-col min-h-screen justify-center content-center items-center bg-cream`}>
       <div className='flex flex-wrap p-4 h-full w-full md:h-[28rem] md:w-[37rem]'>
-        <img className='rounded-t-lg h-auto max-w-full md:w-1/2 md:rounded-l-lg' src='/images/image-product-desktop.jpg' alt='bottle of Gabrielle Essence Eau De Parfum perfume' />
+        <img className='rounded-t-lg h-auto max-w-full md:w-1/2 md:rounded-l-lg' src='./images/image-product-desktop.jpg' alt='bottle of Gabrielle Essence Eau De Parfum perfume' />
         <section className='flex flex-col justify-between space-y-2 md:w-1/2 p-8 text-sm bg-white md:rounded-r-lg'>
           <div className={`${montserrat.variable} font-montserrat text-dark-grayish-blue`}>
             P E R F U M E
