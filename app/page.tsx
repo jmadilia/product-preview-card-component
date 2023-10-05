@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { Montserrat, Fraunces } from 'next/font/google'
+import Image from 'next/image'
 import { ShoppingCartIcon } from '@heroicons/react/24/outline'
 
 const montserrat = Montserrat({
@@ -16,8 +17,15 @@ const fraunces = Fraunces({
 export default function Home() {
   return (
     <main className={`${fraunces.variable} font-fraunces flex flex-col min-h-screen justify-center content-center items-center bg-cream`}>
-      <div className='flex flex-wrap p-4 h-full w-full md:h-[28rem] md:w-[37rem]'>
-        <img className='rounded-t-lg h-auto max-w-full md:w-1/2 md:rounded-l-lg' src='./images/image-product-desktop.jpg' alt='bottle of Gabrielle Essence Eau De Parfum perfume' />
+      <div className='flex flex-wrap h-full w-full p-4 md:h-[28rem] md:w-[37rem]'>
+        <div className='relative md:w-1/2 md:h-full'>
+          <Image
+            src={'/images/image-product-desktop.jpg'}
+            alt='bottle of Gabrielle Essence Eau De Parfum perfume'
+            fill
+          />
+        </div>
+        {/* <img className='rounded-t-lg h-auto max-w-full md:w-1/2 md:rounded-l-lg' src='./images/image-product-desktop.jpg' alt='bottle of Gabrielle Essence Eau De Parfum perfume' /> */}
         <section className='flex flex-col justify-between space-y-2 md:w-1/2 p-8 text-sm bg-white md:rounded-r-lg'>
           <div className={`${montserrat.variable} font-montserrat text-dark-grayish-blue`}>
             P E R F U M E
