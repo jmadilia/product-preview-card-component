@@ -19,7 +19,7 @@ export default function Home() {
     <main className={`${fraunces.variable} font-fraunces flex flex-col min-h-screen justify-center content-center items-center bg-cream`}>
       <div className='flex flex-col h-full md:flex-wrap m-4 rounded-lg overflow-hidden md:h-[28rem] md:w-[37rem]'>
         <div className='flex relative object-cover w-full h-96 md:w-1/2 md:h-full'>
-          <img src={'/images/image-product-desktop.jpg'}
+          <img src={'images/image-product-desktop.jpg'}
             alt='bottle of Gabrielle Essence Eau De Parfum perfume'
             width={600}
             height={900}
@@ -47,7 +47,7 @@ export default function Home() {
           <button className={`${montserrat.variable} flex items-center font-montserrat h-11 justify-center text-white bg-dark-cyan rounded-lg hover:bg-very-dark-emerald`}>
             <div className='h-4 w-4 relative mr-2'>
               <img 
-                src={'/images/icon-cart.svg'}
+                src={'images/icon-cart.svg'}
                 alt='shopping cart'
               />
             </div>
