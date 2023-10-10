@@ -1,7 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
-/* eslint-disable jsx-a11y/alt-text */
-
 import { Montserrat, Fraunces } from 'next/font/google'
+import Image from 'next/image'
 
 const montserrat = Montserrat({
   weight: ['500', '700'],
@@ -19,10 +17,12 @@ export default function Home() {
     <main className={`${fraunces.variable} font-fraunces flex flex-col min-h-screen justify-center content-center items-center bg-cream`}>
       <div className='flex flex-col h-full md:flex-wrap m-4 rounded-lg overflow-hidden md:h-[28rem] md:w-[37rem]'>
         <div className='flex relative object-cover w-full h-96 md:w-1/2 md:h-full'>
-          <img src={'images/image-product-desktop.jpg'}
+          <Image
+            src={'images/image-product-desktop.jpg'}
             alt='bottle of Gabrielle Essence Eau De Parfum perfume'
             width={600}
             height={900}
+            layout='responsive'
           />
         </div>
         <section className='flex flex-col justify-between space-y-4 md:space-y-2 md:w-1/2 md:h-full p-8 text-sm bg-white'>
@@ -46,9 +46,10 @@ export default function Home() {
           </div>
           <button className={`${montserrat.variable} flex items-center font-montserrat h-11 justify-center text-white bg-dark-cyan rounded-lg hover:bg-very-dark-emerald`}>
             <div className='h-4 w-4 relative mr-2'>
-              <img 
+              <Image
                 src={'images/icon-cart.svg'}
                 alt='shopping cart'
+                layout='fill'
               />
             </div>
             <div>Add to Cart</div>
